@@ -1,11 +1,24 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import './Navbar.css'
+import {Button} from './Button'
 
 function Navbar() {
     const [click, setClick] = useState(false); // Click and state handler for click variable
+    const [button, setButton] = useState(true); // Initially, button is set to true which means we can view the button
 
     const handleClick = () => setClick(!click); // Click handler to reverse state of click variable
-    const closeMenu = () => setClick(false);
+    const closeMenu = () => setClick(false); // Handler to close menu (set click to false)
+
+    const showButton = () => {
+        if(window.innerWidth <= 960) { // Hide button if mobile view
+            setButton(false);
+        } else {
+            setButton(true);
+        }
+    }
+
+    window.addEventListener('resize', showButton); // call showButton everytime window resize property is modified
 
     return (
         <>
@@ -40,6 +53,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
+                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} {/* Show Button if button is true */}
                 </div>
             </nav>
         </>
