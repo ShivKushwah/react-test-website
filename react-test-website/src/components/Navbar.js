@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css'
 import {Button} from './Button'
@@ -18,13 +18,17 @@ function Navbar() {
         }
     }
 
+    useEffect(() => {
+        showButton();
+    }, []); // Call show button once at the start;
+
     window.addEventListener('resize', showButton); // call showButton everytime window resize property is modified
 
     return (
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
+                    <Link to="/" className="navbar-logo" onClick={closeMenu}>
                         TRVL <i className='fab fa-typo3'/> {/* Icon from FontAwesome for logo next to website name*/}
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
