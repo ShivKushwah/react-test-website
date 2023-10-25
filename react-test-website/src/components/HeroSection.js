@@ -13,10 +13,12 @@ function HeroSection() {
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
                     GET STARTED
                 </Button>
-                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
-                    WATCH TRAILER <i className='farfa-play-circle'/>
+                <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
+                    WATCH TRAILER <i className='far fa-play-circle'/>
                 </Button>
             </div>
         </div>
     )
 }
+
+export default HeroSection;
