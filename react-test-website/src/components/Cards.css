@@ -86,6 +86,7 @@
     transition: all 0.2s linear;
   }
 
+  /* This CSS makes it zoom in while hovered */
   .cards__item__img:hover {
     transform: scale(1.1);
   }
