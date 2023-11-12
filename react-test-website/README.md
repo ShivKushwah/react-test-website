@@ -1,3 +1,8 @@
+# Tutorial
+React Website - https://www.youtube.com/watch?v=I2UBjN5ER4s
+Vercel Deploy - https://blog.logrocket.com/8-ways-deploy-react-app-free/ -> https://vercel.com/docs
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
