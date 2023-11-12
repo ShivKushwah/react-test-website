@@ -1,7 +1,7 @@
 # Tutorial
 React Website - https://www.youtube.com/watch?v=I2UBjN5ER4s
 
-Vercel Deploy - https://blog.logrocket.com/8-ways-deploy-react-app-free/ -> https://vercel.com/docs
+Vercel Deploy - https://blog.logrocket.com/8-ways-deploy-react-app-free/ -> https://vercel.com/docs. Set root directory as a custom root directory ./react-test-website and project is located at https://vercel.com/shivkushwahs-projects/react-test-website
 
 
 # Getting Started with Create React App
